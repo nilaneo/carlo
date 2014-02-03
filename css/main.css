@@ -70,12 +70,20 @@ p {
   margin: 0;
   padding: 0;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 input,
 textarea,
 input:active,
 textarea:active,
 :focus {
   outline: none;
+}
+a {
+  text-decoration: none;
 }
 a:focus {
   outline: none;
@@ -115,6 +123,107 @@ a:hover {
     HEADER
 ========================================================================== */
 .row-top {
-  height: 30px;
+  height: 32px;
   padding-top: 10px;
+  background-color: #161616;
+}
+nav li {
+  vertical-align: top;
+}
+nav a {
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  vertical-align: top;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+nav a:hover,
+nav a.active {
+  color: #de6761;
+}
+.nav-top ul {
+  float: right;
+  padding-left: 0;
+  list-style-type: none;
+}
+.nav-top ul li {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+}
+.nav-top li {
+  margin-left: 40px;
+  line-height: 12px;
+}
+.nav-top a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.row-main {
+  height: 70px;
+  padding-top: 3px;
+}
+.logo-main {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 149px;
+  height: 55px;
+  margin-right: 50px;
+  background: url(../img/logo-main.png) no-repeat;
+}
+.nav-main {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  vertical-align: top;
+}
+.nav-main ul {
+  margin-top: 25px;
+}
+.nav-main ul li {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+}
+.nav-main li {
+  margin-left: 70px;
+  line-height: 16px;
+}
+.nav-main li:first-child {
+  margin-left: 0;
+}
+.nav-main a {
+  color: #262134;
+  font-size: 16px;
+}
+.delivery {
+  height: 60px;
+  padding-top: 22px;
+  background-color: #303030;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.delivery .icon-car {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 43px;
+  height: 13px;
+  margin-right: 5px;
+  background: url(../img/car-delivery.png) no-repeat;
+}
+.delivery span {
+  color: #5eccb7;
 }
