@@ -280,6 +280,37 @@ nav {
     }
 }
 
+.cart-block {
+    .right;
+    margin-top: 12px;
+
+    .cart-status,
+    .cart {
+        .inline-block;
+        vertical-align: top;
+    }
+
+    .cart-status {
+        color: @black;
+        font-size: 11px;
+        font-style: italic;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        margin: 12px 12px 0 0;
+    }
+
+    .cart {
+        .inline-block;
+        width: 27px;
+        height: 37px;
+        padding-top: 11px;
+        text-align: center;
+        background: url(../img/cart.png) no-repeat;
+        color: @black;
+        font-size: 18px;
+        font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+    }
+}
+
 .delivery {
     height: 60px;
     padding-top: 22px;
@@ -301,4 +332,43 @@ nav {
     span {
         color: @green;
     }
+}
+
+/* ==========================================================================
+    MAIN
+========================================================================== */
+
+
+.banner-main {
+    height: 540px;
+    padding-top: 115px;
+    background-image: url(../img/bunner-main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+
+    h2 {
+        width: 383px;
+        height: 215px;
+        margin: 0 auto 40px;
+        background: url(../img/necklaces.png) no-repeat; 
+        text-indent: 100%; 
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.btn {
+    .inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 20px;
+    background-color: @green;
+    color: @white;
+    font-size: 12px;
+    font-family: "GillSansSemiBoldItalic", "Open Sans", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    .border-radius(20px);
+    .box-shadow(3px 3px 0 @white);
 }

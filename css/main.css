@@ -204,6 +204,39 @@ nav a.active {
   color: #262134;
   font-size: 16px;
 }
+.cart-block {
+  float: right;
+  margin-top: 12px;
+}
+.cart-block .cart-status,
+.cart-block .cart {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  vertical-align: top;
+}
+.cart-block .cart-status {
+  color: #000000;
+  font-size: 11px;
+  font-style: italic;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 12px 12px 0 0;
+}
+.cart-block .cart {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 27px;
+  height: 37px;
+  padding-top: 11px;
+  text-align: center;
+  background: url(../img/cart.png) no-repeat;
+  color: #000000;
+  font-size: 18px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+}
 .delivery {
   height: 60px;
   padding-top: 22px;
@@ -226,4 +259,48 @@ nav a.active {
 }
 .delivery span {
   color: #5eccb7;
+}
+/* ==========================================================================
+    MAIN
+========================================================================== */
+.banner-main {
+  height: 540px;
+  padding-top: 115px;
+  background-image: url(../img/bunner-main.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+.banner-main h2 {
+  width: 383px;
+  height: 215px;
+  margin: 0 auto 40px;
+  background: url(../img/necklaces.png) no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.btn {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  height: 28px;
+  line-height: 28px;
+  padding: 0 20px;
+  background-color: #5eccb7;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "GillSansSemiBoldItalic", "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 3px 3px 0 #ffffff;
+  -moz-box-shadow: 3px 3px 0 #ffffff;
+  box-shadow: 3px 3px 0 #ffffff;
 }
