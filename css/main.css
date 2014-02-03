@@ -1,0 +1,62 @@
+/* ==========================================================================
+LESS
+========================================================================== */
+.inline-block {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+}
+/* ==========================================================================
+    GENERAL STYLES
+========================================================================== */
+html,
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  height: 100%;
+  color: #58595b;
+  background-color: #eeeeee;
+  font-size: 18px;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea,
+input:active,
+textarea:active,
+:focus {
+  outline: none;
+}
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  zoom: 1;
+  /* IE < 8 */
+}
+.clearfix:after {
+  clear: both;
+}
+.list-inline li {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+}

@@ -1,0 +1,180 @@
+/* ==========================================================================
+    FONTS
+========================================================================== */
+
+@font-face {
+    font-family: GillSans;
+    src: url(../fonts/GILLSANS.ttf);
+}
+
+@font-face {
+    font-family: GillSansBold;
+    src: url(../fonts/GILLSANS-BOLD.ttf);
+}
+
+@font-face {
+    font-family: GillSansBoldItalic;
+    src: url(../fonts/GILLSANS-BOLDITALIC.ttf);
+}
+
+@font-face {
+    font-family: GillSansItalic;
+    src: url(../fonts/GILLSANS-ITALIC.ttf);
+}
+
+@font-face {
+    font-family: GillSansLight;
+    src: url(../fonts/GILLSANS-LIGHT.ttf);
+}
+
+@font-face {
+    font-family: GillSansLightItalic;
+    src: url(../fonts/GILLSANS-LIGHTITALIC.ttf);
+}
+
+@font-face {
+    font-family: GillSansSemiBold;
+    src: url(../fonts/GILLSANS-SEMIBOLD.ttf);
+}
+
+@font-face {
+    font-family: GillSansSemiBoldItalic;
+    src: url(../fonts/GILLSANS-SEMIBOLDITALIC.ttf);
+}
+
+@font-face {
+    font-family: GillSansUltraBold;
+    src: url(../fonts/GILLSANS-ULTRABOLD.ttf);
+}
+
+@font-face {
+    font-family: Gillubcd;
+    src: url(../fonts/GILLUBCD.ttf);
+}
+
+@font-face {
+    font-family: Gilsanub;
+    src: urzl(../fonts/GILSANUB.ttf);
+}
+
+/* ==========================================================================
+    LESS
+========================================================================== */
+
+@main-bg: #eee;
+@white: #fff;
+@black: #000;
+@text: #58595b;
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+.gradient (@startColor, @endColor) {
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.box-shadow (@string) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow:    @string;
+    box-shadow:         @string;
+}
+
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing:    @type;
+    box-sizing:         @type;
+}
+
+.opacity (@opacity: 0.5) {
+    -webkit-opacity:    @opacity;
+    -moz-opacity:       @opacity;
+    opacity:        @opacity;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition:    @transition;
+    -ms-transition:     @transition;
+    -o-transition:      @transition;
+    transition:         @transition;
+}
+
+.inline-block {
+    display: inline-block;
+    *display: block;
+    zoom: 1; /* IE < 8 */
+}
+
+/* ==========================================================================
+    GENERAL STYLES
+========================================================================== */
+
+html,
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    height: 100%;
+    color: @text;
+    background-color: @main-bg;
+    font-size: 18px;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+input:active,
+textarea:active,
+:focus {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    zoom: 1; /* IE < 8 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.list-inline {
+    li {
+        .inline-block;
+    }
+}
