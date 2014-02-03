@@ -15,9 +15,9 @@
         <![endif]-->
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <div class="row-top">
+        <header class="header">
+            <div class="row-top">
+                <div class="conateiner">
                     <nav class="nav-top">
                         <ul>
                             <li><a href="#0">Чаво</a></li>
@@ -25,8 +25,10 @@
                             <li><a href="#0">Контакты</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div class="row-main">
+                </div><!-- end of container -->
+            </div>
+            <div class="row-main">
+                <div class="container">
                    <a href="#0" class="logo-main"></a> 
                    <nav class="nav-main">
                        <ul>
@@ -35,21 +37,26 @@
                            <li><a href="#0">Carlo Home</a></li>
                        </ul>
                    </nav>
-                   <div class="cart-container">
+                   <div class="cart-block">
                        <span class="cart-status"></span>
                         <div class="cart"></div>
                    </div>
-                </div>
-                <div class="delivery">
+                </div><!-- end of container -->
+            </div><!-- end of row-main -->
+            <div class="delivery">
+                <div class="container">
+                    <i class="icon-car"></i>
                     Доставка в Россию и Украину
-                </div>
-            </header>
-            <div class="main">
-                <div class="banner-main">
-                    <h2>Новая колекция - подвески</h2>
-                    <a href="#0" class="btn btn-italic btn-shadowed">Перейти к коллекции</a>
-                </div>
-                <div class="block-bestsellers">
+                </div><!-- end of container -->
+            </div>
+        </header>
+        <div class="main">
+            <div class="banner-main">
+                <h2>Новая колекция - подвески</h2>
+                <a href="#0" class="btn btn-italic btn-shadowed">Перейти к коллекции</a>
+            </div>
+            <div class="block-bestsellers">
+                <div class="container">
                     <h4 class="title-block">Бестселлеры</h4>
                     <ul class="list-bestsellers">
                         <li>
@@ -60,12 +67,61 @@
                             <a href="#0"></a>
                         </li>
                     </ul>
+                </div><!-- end of container -->
+            </div><!-- end of block-bestsellers -->
+            <div class="block-reasons">
+                <div class="container">
+                    <h3 class="title-why">
+                        Почему <span>Карло</span><span>?</span>
+                    </h3>
+                    <ul class="reasons">
+                        <li><span>Эко материалы</span></li>
+                        <li><span>В тренде</span></li>
+                        <li><span>Эксклюзивность</span></li>
+                        <li><span>Карло-мастер</span></li>
+                    </ul>
+                </div><!-- end of container -->
+            </div><!-- end of block-reasons -->
+            <div class="block-greeting">
+                <div class="container">
+                    <div class="col-1">
+                        <p>
+                            Карло рад друзьям, которые ценят в украшениях не только блеск, пробу и астрономическую цену, но и теплоту, которую дарит аксессуар.   
+                        </p>
+                        <p>
+                            Ведь никакой из материалов не может сравниться по органичности с древесиной. Дерево подарило тепло человеку в самом начале его истории. Мы же хотим, чтобы это тепло согревало Вас и сейчас, спустя тысячелетия.  
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Карло гордится тем, что все изделия произведены в Украине
+                            с использованием экологически-чистых материалов.  
+                        </p>
+                        <p>
+                           Не забывайте, что мы молодая компания и будем рады Вашей критике и советам, от которых напрямую будет зависеть ассортимент изделий.  
+                        </p>
+                    </div>
+                </div><!-- end of container -->
+            </div><!-- end of block-greeting -->
+        </div><!-- end of main -->
+        <footer class="footer">
+            <div class="container">
+                <div class="location">
+                    г. Севастополь, Украина
                 </div>
-            </div>
-        </div><!-- end of container -->
+                <div class="socials">
+                    <ul class="list-socials">
+                        <li><a href="#0" class="icon-vkontakte"></a></li>
+                        <li><a href="#0" class="icon-facebook"></a></li>
+                        <li><a href="#0" class="icon-instagram"></a></li>
+                    </ul>
+                </div>
+            </div><!-- end of container -->
+        </footer>
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script> 
+
     </body>
 </html>

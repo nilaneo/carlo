@@ -54,7 +54,7 @@
 
 @font-face {
     font-family: Gilsanub;
-    src: urzl(../fonts/GILSANUB.ttf);
+    src: url(../fonts/GILSANUB.ttf);
 }
 
 /* ==========================================================================
@@ -64,7 +64,7 @@
 @main-bg: #eee;
 @white: #fff;
 @black: #000;
-@text: #58595b;
+@text: #303030;
 
 .border-radius (@radius: 5px) {
     -webkit-border-radius: @radius;
@@ -126,8 +126,8 @@ body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     height: 100%;
     color: @text;
-    background-color: @main-bg;
-    font-size: 18px;
+    background-color: @white;
+    font-size: 16px;
 }
 
 ul,
@@ -177,4 +177,18 @@ a:hover {
     li {
         .inline-block;
     }
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+    HEADER
+========================================================================== */
+
+.row-top {
+    height: 30px;
+    padding-top: 10px;
 }
