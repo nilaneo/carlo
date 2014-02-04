@@ -310,20 +310,20 @@ nav a.active {
   box-shadow: 3px 3px 0 #ffffff;
 }
 .title-block {
-  position: relative;
   width: 1000px;
-  height: 2px;
+  height: 0;
+  border-bottom: 2px solid #f0f1f0;
   margin: 50px 0;
-  background-color: #f0f1f0;
+  text-align: center;
 }
 .title-block span {
-  position: absolute;
+  position: relative;
   top: -18px;
-  left: 50%;
-  display: block;
-  width: 166px;
-  margin-left: -77px;
-  padding: 8px 0;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding: 8px;
   background-color: #f0f1f0;
   color: rgba(22, 22, 22, 0.63);
   font-size: 18px;
