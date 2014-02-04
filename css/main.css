@@ -338,6 +338,13 @@ nav a.active {
   list-style-type: none;
   float: left;
   margin-left: 26px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
 }
 .list-bestsellers li:first-child {
   margin-left: 0;
@@ -346,11 +353,11 @@ nav a.active {
   position: relative;
 }
 .list-bestsellers a:hover .product-info {
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
+  moz-transform: rotate(0);
   -ms-transform: rotate(0);
   -o-transform: rotate(0);
   transform: rotate(0);
+  -webkit-opacity: 1;
 }
 .link-round-img,
 .product-info {
@@ -381,11 +388,11 @@ nav a.active {
   -o-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  -webkit-opacity: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
