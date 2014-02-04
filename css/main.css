@@ -471,3 +471,42 @@ nav a.active {
   text-transform: uppercase;
   z-index: -1;
 }
+/* ==========================================================================
+    FOOTER
+========================================================================== */
+.footer {
+  height: 75px;
+  background-color: #161616;
+}
+.footer .location {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.footer .list-socials {
+  padding-left: 0;
+  margin-top: 24px;
+}
+.footer .list-socials li {
+  float: left;
+  list-style-type: none;
+  margin-left: 15px;
+}
+.footer .list-socials .icon-social {
+  display: block;
+  width: 32px;
+  height: 30px;
+  background-image: url(../img/socials-sprite.png);
+  background-repeat: no-repeat;
+}
+.footer .list-socials .icon-vkontakte {
+  background-position: 0 0;
+}
+.footer .list-socials .icon-facebook {
+  background-position: -30px 0;
+}
+.footer .list-socials .icon-instagram {
+  background-position: -62px 0;
+}
