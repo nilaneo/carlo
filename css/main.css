@@ -435,3 +435,39 @@ nav a.active {
 .list-reasons li:first-child {
   margin-left: 0;
 }
+.block-greeting {
+  height: 453px;
+  padding-top: 100px;
+  background: url(../img/bg-dirty.jpg);
+}
+.block-greeting .col {
+  width: 50%;
+  height: 228px;
+  float: left;
+}
+.block-greeting .col-1 {
+  padding-right: 32px;
+}
+.block-greeting .col-2 {
+  padding-left: 32px;
+  border-left: 1px solid #838383;
+}
+.block-greeting p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 26px;
+  z-index: 10;
+}
+.first-letter {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  color: #dedede;
+  font-size: 48px;
+  font-family: "GillSansBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  z-index: -1;
+}
