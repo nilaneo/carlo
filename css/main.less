@@ -113,6 +113,22 @@
     transition:         @transition;
 }
 
+.transform(@string){
+    -webkit-transform: @string;
+    -moz-transform:      @string;
+    -ms-transform:       @string;
+    -o-transform:        @string;
+       transform:        @string;
+}
+
+.transform-origin (@x:center, @y:center) {
+    -webkit-transform-origin: @x @y;
+    -moz-transform-origin:    @x @y;
+    -ms-transform-origin:     @x @y;
+    -o-transform-origin:      @x @y;
+       transform-origin:      @x @y;
+}
+
 .inline-block {
     display: inline-block;
     *display: block;
@@ -344,7 +360,8 @@ nav {
     padding-top: 115px;
     background-image: url(../img/bunner-main.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     text-align: center;
 
     h2 {
@@ -376,29 +393,28 @@ nav {
 .title-block {
         position: relative;
         width: 1000px;
-        margin: 34px 0;
-        text-align: center;
-
-    .line {
-        position: absolute;
-        top: 50%;
-        width: 100%;
         height: 2px;
+        margin: 50px 0;
         background-color: #f0f1f0;
-        z-index: -1;
-    }
 
     span {
-        .inline-block;
-        padding: 8px;
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        display: block;
+        width: 166px;
+        margin-left: -77px;
+        padding: 8px 0;
         background-color: #f0f1f0;
-        color: #525352;
+        color: rgba(22, 22, 22, .63);
         font-size: 18px;
         font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
         letter-spacing: 2px;
         text-transform: uppercase;
+        text-align: center;
     }
 }
+
 
 .block-bestsellers {
     margin-bottom: 50px;
@@ -418,15 +434,76 @@ nav {
     li:first-child {
         margin-left: 0;
     }
+
+    a {
+        position: relative;
+    }
+
+    a:hover {
+        .product-info {
+            .transform(rotate(0));
+        }
+    }
 }
 
-.link-round-img {
+.link-round-img,
+.product-info
+ {
     .inline-block;
     width: 178px;
     height: 178px;
     .border-radius(50%);
     overflow: hidden;
 }
+
+.product-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    background-color: @green;
+    background-color: rgba(94, 204, 183, .8);
+    text-align: center;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    .transform(rotate(-180deg));
+    .transition(all .5s);
+
+    p {
+        margin: 0;
+    }
+
+    .price {
+        color: @white;
+        font-size: 24px;
+        line-height: 24px;
+        font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+    }
+
+    .price-ru {
+        color: @black;
+    }
+
+    .product-name {
+        margin: 5px 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #125145;
+        font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+    }
+
+    .icon-arrow-right {
+        .inline-block;
+        width: 29px;
+        height: 14px;
+        background: url(../img/icon-arrow-right.png);
+    }
+}
+
+
 
 .block-wooden {
     background-image: url(../img/bg-wooden.jpg);
@@ -477,7 +554,9 @@ nav {
         span {
             .inline-block;
             padding: 5px 10px;
+            background-color: rgb(48, 48, 48);
             background-color: rgba(48, 48, 48, 0.9);
+            color: @white;
             color: rgba(255, 255, 255, .9);
             font-size: 16px;
             font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
