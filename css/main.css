@@ -306,7 +306,7 @@ nav a.active {
 }
 .title-block {
   position: relative;
-  width: 100%;
+  width: 1000px;
   margin: 34px 0;
   text-align: center;
 }
@@ -362,9 +362,73 @@ nav a.active {
 }
 .block-wooden {
   background-image: url(../img/bg-wooden.jpg);
-  background-size: contain;
 }
 .block-reasons {
   width: 100%;
   height: 488px;
+  padding-top: 40px;
+}
+.title-why {
+  margin: 0;
+  color: #ffffff;
+  font-size: 48px;
+  font-family: "GillSansBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title-why .text-emph {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding: 3px 6px 3px 9px;
+  background-color: rgba(94, 204, 183, 0.9);
+}
+.title-why .q-mark {
+  margin-left: 15px;
+  font-size: 112px;
+  font-family: "GillSansBoldItalic", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  vertical-align: middle;
+}
+.list-reasons ul {
+  padding-left: 0;
+}
+.list-reasons li {
+  float: left;
+  list-style-type: none;
+  display: block;
+  width: 180px;
+  margin-left: 90px;
+  text-align: center;
+}
+.list-reasons li span {
+  display: block;
+  padding: 5px 10px;
+  background-color: rgba(48, 48, 48, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.list-reasons li i {
+  display: block;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto 25px;
+}
+.list-reasons li .icon-branch {
+  background: url(../img/icon-branch.png);
+}
+.list-reasons li .icon-hipsta {
+  background: url(../img/icon-hipsta.png);
+}
+.list-reasons li .icon-crown {
+  background: url(../img/icon-crown.png);
+}
+.list-reasons li .icon-master {
+  background: url(../img/icon-master.png);
+}
+.list-reasons li:first-child {
+  margin-left: 0;
 }
