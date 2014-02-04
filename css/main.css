@@ -264,7 +264,7 @@ nav a.active {
     MAIN
 ========================================================================== */
 .banner-main {
-  height: 540px;
+  height: 520px;
   padding-top: 115px;
   background-image: url(../img/bunner-main.jpg);
   background-repeat: no-repeat;
@@ -303,4 +303,31 @@ nav a.active {
   -webkit-box-shadow: 3px 3px 0 #ffffff;
   -moz-box-shadow: 3px 3px 0 #ffffff;
   box-shadow: 3px 3px 0 #ffffff;
+}
+.title-block {
+  position: relative;
+  width: 100%;
+  margin: 34px 0;
+  text-align: center;
+}
+.title-block .line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #f0f1f0;
+  z-index: -1;
+}
+.title-block span {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding: 8px;
+  background-color: #f0f1f0;
+  color: #525352;
+  font-size: 18px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

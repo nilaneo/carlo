@@ -340,7 +340,7 @@ nav {
 
 
 .banner-main {
-    height: 540px;
+    height: 520px;
     padding-top: 115px;
     background-image: url(../img/bunner-main.jpg);
     background-repeat: no-repeat;
@@ -371,4 +371,31 @@ nav {
     text-transform: uppercase;
     .border-radius(20px);
     .box-shadow(3px 3px 0 @white);
+}
+
+.title-block {
+        position: relative;
+        width: 100%;
+        margin: 34px 0;
+        text-align: center;
+
+    .line {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #f0f1f0;
+        z-index: -1;
+    }
+
+    span {
+        .inline-block;
+        padding: 8px;
+        background-color: #f0f1f0;
+        color: #525352;
+        font-size: 18px;
+        font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
 }
