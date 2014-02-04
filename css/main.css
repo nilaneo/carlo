@@ -403,7 +403,10 @@ nav a.active {
   text-align: center;
 }
 .list-reasons li span {
-  display: block;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
   padding: 5px 10px;
   background-color: rgba(48, 48, 48, 0.9);
   color: rgba(255, 255, 255, 0.9);
