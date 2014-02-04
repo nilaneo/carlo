@@ -545,6 +545,40 @@ nav a.active {
   z-index: -1;
 }
 /* ==========================================================================
+    CATALOGUE
+========================================================================== */
+.container-catalogue {
+  padding: 40px 0;
+}
+.icon-currency {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 13px;
+  height: 18px;
+  margin-left: 4px;
+}
+.icon-grn-black {
+  background: url(../img/icon-grn-black.png);
+}
+.icon-rub-black {
+  background: url(../img/icon-rub-black.png);
+}
+.icon-grn-white {
+  background: url(../img/icon-grn-white.png);
+}
+/* SIDEBAR
+========================================================================== */
+.sidebar {
+  float: left;
+  width: 184px;
+}
+.main-catalogue {
+  float: left;
+  width: 816px;
+}
+/* ==========================================================================
     FOOTER
 ========================================================================== */
 .footer {
