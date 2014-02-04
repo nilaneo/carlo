@@ -331,3 +331,40 @@ nav a.active {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.block-bestsellers {
+  margin-bottom: 50px;
+}
+.list-bestsellers ul {
+  padding-left: 0;
+}
+.list-bestsellers li {
+  list-style-type: none;
+  float: left;
+  margin-left: 26px;
+}
+.list-bestsellers li:first-child {
+  margin-left: 0;
+}
+.link-round-img {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 178px;
+  height: 178px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.block-wooden {
+  background-image: url(../img/bg-wooden.jpg);
+  background-size: contain;
+}
+.block-reasons {
+  width: 100%;
+  height: 488px;
+}
