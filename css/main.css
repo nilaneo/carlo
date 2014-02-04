@@ -292,7 +292,6 @@ nav a.active {
   background-color: #5eccb7;
   color: #ffffff;
   font-size: 12px;
-  font-family: "GillSansSemiBoldItalic", "Open Sans", Helvetica, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   -webkit-border-radius: 20px;
@@ -301,6 +300,11 @@ nav a.active {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.btn-italic {
+  font-family: "GillSansSemiBoldItalic", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.btn-shadowed {
   -webkit-box-shadow: 3px 3px 0 #ffffff;
   -moz-box-shadow: 3px 3px 0 #ffffff;
   box-shadow: 3px 3px 0 #ffffff;
