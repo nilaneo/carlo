@@ -128,12 +128,25 @@
                 </aside>
                 <div class="main-catalogue">
                     <div class="custom-settings">
-                        <div class="sorting">
+                        <div class="custom-settings-part sorting">
                             <span>Сортировать</span>
-                            <div class="select-box"></div>
+                            <div class="select-box select-sort">
+                                <select name="sort">
+                                    <option selected value="от дешевых к дорогим">от дешевых к дорогим</option>
+                                    <option value="от дорогих к дешевым">от дорогих к дешевым</option>
+                                    <option value="по рейтингу">по рейтингу</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="pages-quantity">
+                        <div class="custom-settings-part pages-quantity">
                             <span>Количество на странице</span>
+                            <div class="select-box select-pages-quantity">
+                                <select name="pages-quantity">
+                                    <option selected value="15">15</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </div>
                         </div>
                     </div><!-- end of custom-settings -->
                     <div class="grid-3">
@@ -269,7 +282,13 @@
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script> 
+        <script src="js/main.js"></script>
+        <script src="js/jquery.selectify.js"></script>
+        <script>
+            $(function(){
+                $("select").selectify();
+            });
+        </script>
 
     </body>
 </html>
