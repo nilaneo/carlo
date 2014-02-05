@@ -943,6 +943,8 @@ nav {
     left: 22%;
     bottom: 20px;
     padding: 0 25px;
+    font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 /* ==========================================================================
@@ -988,6 +990,71 @@ nav {
 
         .icon-instagram {
             background-position: -62px 0;
+        }
+    }
+}
+
+/* PAGINATION
+========================================================================== */
+
+.pagination {
+    text-align: right;
+    ul {
+        .list-inline;
+        list-style-type: none;
+    }
+
+    a {
+        padding: 0 7px;
+        color: #919191;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        .transition(all .1s);
+    }
+
+    a:hover,
+    a.is-current {
+        background-color: @black-lighter;
+        color: @white;
+    }
+
+    .prev-page,
+    .next-page {
+        .inline-block;
+        padding-top: 2px;
+        span {
+            .inline-block;
+            width: 7px;
+            height: 12px;
+            background-image: url(../img/sprite-arrows-pagination.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .prev-page {
+        span {
+            background-position: 0 0;
+        }
+    }
+
+    .prev-page:hover, 
+    .prev-page:active {
+        span {
+            background-position: -7px 0;
+        }
+    }
+
+    .next-page {
+        span {
+            background-position: -14px 0;
+        }
+    }
+
+    .next-page:hover, 
+    .next-page:active {
+        span {
+            background-position: -21px 0;
         }
     }
 }

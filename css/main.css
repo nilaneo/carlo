@@ -825,6 +825,8 @@ nav a.is-active {
   left: 22%;
   bottom: 20px;
   padding: 0 25px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 }
 /* ==========================================================================
     FOOTER
@@ -864,6 +866,70 @@ nav a.is-active {
 }
 .footer .list-socials .icon-instagram {
   background-position: -62px 0;
+}
+/* PAGINATION
+========================================================================== */
+.pagination {
+  text-align: right;
+}
+.pagination ul {
+  list-style-type: none;
+}
+.pagination ul li {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+}
+.pagination a {
+  padding: 0 7px;
+  color: #919191;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.pagination a:hover,
+.pagination a.is-current {
+  background-color: #161616;
+  color: #ffffff;
+}
+.pagination .prev-page,
+.pagination .next-page {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding-top: 2px;
+}
+.pagination .prev-page span,
+.pagination .next-page span {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 7px;
+  height: 12px;
+  background-image: url(../img/sprite-arrows-pagination.png);
+  background-repeat: no-repeat;
+}
+.pagination .prev-page span {
+  background-position: 0 0;
+}
+.pagination .prev-page:hover span,
+.pagination .prev-page:active span {
+  background-position: -7px 0;
+}
+.pagination .next-page span {
+  background-position: -14px 0;
+}
+.pagination .next-page:hover span,
+.pagination .next-page:active span {
+  background-position: -21px 0;
 }
 /* ==========================================================================
     Custom select box
