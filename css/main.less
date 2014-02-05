@@ -64,6 +64,7 @@
 @main-bg: #eee;
 @white: #fff;
 @black: #000;
+@black-lighter: #161616;
 @text: #303030;
 @orange: #de6761;
 @green: #5eccb7;
@@ -217,7 +218,7 @@ a:hover {
 .row-top {
     height: 32px;
     padding-top: 10px;
-    background-color: #161616;
+    background-color: @black-lighter;
 }
 
 nav {
@@ -234,7 +235,7 @@ nav {
     }
 
     a:hover,
-    a.active {
+    a.is-active {
         color: @orange;
     }
 }
@@ -405,19 +406,19 @@ nav {
 
     span {
         position: relative;
-        top: -18px;
+        top: -15px;
         .inline-block;
-        padding: 8px;
+        padding: 6px 8px;
         background-color: #f0f1f0;
         color: rgba(22, 22, 22, .63);
         font-size: 18px;
+        line-height: 18px;
         font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
         letter-spacing: 2px;
         text-transform: uppercase;
         text-align: center;
     }
 }
-
 
 .block-bestsellers {
     margin-bottom: 50px;
@@ -655,8 +656,29 @@ nav {
     padding: 40px 0;
 }
 
-.currency {
+.main-catalogue {
+    float: left;
+    width: 816px;
+}
 
+.currency {
+    a {
+        .inline-block;
+        width: 46px;
+        height: 24px;
+        text-align: center;
+        line-height: 20px;
+        background-color: transparent;
+    }
+
+    a:hover,
+    a.is-active {
+        background-color: @orange;
+    }
+
+    span {
+        vertical-align: middle;
+    }
 }
 
 .icon-currency {
@@ -664,7 +686,6 @@ nav {
     width: 13px;
     height: 18px;
     margin-left: 4px;
-    // vertical-align: middle;
 }
 
 .icon-grn-black {
@@ -687,9 +708,80 @@ nav {
     width: 184px;
 }
 
-.main-catalogue {
-    float: left;
-    width: 816px;
+.title-list {
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    margin-top: 30px;
+    line-height: 35px;
+    color: @white;
+    color: rgba(255, 255, 255, .83);
+    background-color: @black-lighter;
+    font-size: 12px;
+    font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.list-checkboxes {
+    margin: 22px 0;
+    list-style-type: none; 
+    border-right: 1px solid #f0f0f0;
+
+    li {
+        margin-top: 10px;
+    }
+
+    li:first-child {
+        margin-top: 0;
+    }
+
+    a {
+        .inline-block;
+        padding-left: 27px;
+        background-image: url(../img/checkbox-unchecked.jpg);
+        background-repeat: no-repeat;
+
+        span {
+            .inline-block;
+            padding: 1px 5px 1px 3px;
+            background-color: transparent;
+            color: @black-lighter;
+            font-size: 12px;
+            line-height: 18px;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            vertical-align: top;
+        }
+    }
+
+    a:hover span{
+        background-color: @orange;
+        color: @white;
+    }
+
+    .is-checked {
+        background-image: url(../img/checkbox-checked.jpg);
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.lnk-dotted {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding-left: 30px;
+    line-height: 35px;
+    border: none;
+    border-top: 2px dotted @black-lighter;
+    border-bottom: 2px dotted @black-lighter;
+    color: @black-lighter;
+    font-size: 12px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -698,7 +790,7 @@ nav {
 
 .footer {
     height: 75px;
-    background-color: #161616;
+    background-color: @black-lighter;
 
     .location {
         margin-top: 30px;

@@ -141,7 +141,7 @@ nav a {
   transition: all 0.3s;
 }
 nav a:hover,
-nav a.active {
+nav a.is-active {
   color: #de6761;
 }
 .nav-top ul {
@@ -318,15 +318,16 @@ nav a.active {
 }
 .title-block span {
   position: relative;
-  top: -18px;
+  top: -15px;
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-  padding: 8px;
+  padding: 6px 8px;
   background-color: #f0f1f0;
   color: rgba(22, 22, 22, 0.63);
   font-size: 18px;
+  line-height: 18px;
   font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -550,6 +551,28 @@ nav a.active {
 .container-catalogue {
   padding: 40px 0;
 }
+.main-catalogue {
+  float: left;
+  width: 816px;
+}
+.currency a {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 46px;
+  height: 24px;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+}
+.currency a:hover,
+.currency a.is-active {
+  background-color: #de6761;
+}
+.currency span {
+  vertical-align: middle;
+}
 .icon-currency {
   display: inline-block;
   *display: block;
@@ -574,9 +597,78 @@ nav a.active {
   float: left;
   width: 184px;
 }
-.main-catalogue {
-  float: left;
-  width: 816px;
+.title-list {
+  width: 100%;
+  height: 35px;
+  margin: 0;
+  margin-top: 30px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.83);
+  background-color: #161616;
+  font-size: 12px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.list-checkboxes {
+  margin: 22px 0;
+  list-style-type: none;
+  border-right: 1px solid #f0f0f0;
+}
+.list-checkboxes li {
+  margin-top: 10px;
+}
+.list-checkboxes li:first-child {
+  margin-top: 0;
+}
+.list-checkboxes a {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding-left: 27px;
+  background-image: url(../img/checkbox-unchecked.jpg);
+  background-repeat: no-repeat;
+}
+.list-checkboxes a span {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding: 1px 5px 1px 3px;
+  background-color: transparent;
+  color: #161616;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  vertical-align: top;
+}
+.list-checkboxes a:hover span {
+  background-color: #de6761;
+  color: #ffffff;
+}
+.list-checkboxes .is-checked {
+  background-image: url(../img/checkbox-checked.jpg);
+}
+.list-checkboxes .is-checked span {
+  font-weight: bold;
+}
+.lnk-dotted {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding-left: 30px;
+  line-height: 35px;
+  border: none;
+  border-top: 2px dotted #161616;
+  border-bottom: 2px dotted #161616;
+  color: #161616;
+  font-size: 12px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 /* ==========================================================================
     FOOTER
