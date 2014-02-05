@@ -416,7 +416,7 @@ nav a.is-active {
 .product-info .price-ru {
   color: #000000;
 }
-.product-info .product-name {
+.product-info .bestseller-name {
   margin: 5px 0;
   font-size: 16px;
   line-height: 20px;
@@ -554,6 +554,7 @@ nav a.is-active {
 .main-catalogue {
   float: left;
   width: 816px;
+  padding-left: 72px;
 }
 .currency a {
   display: inline-block;
@@ -679,6 +680,7 @@ nav a.is-active {
 ========================================================================== */
 .custom-settings {
   height: 20px;
+  margin-bottom: 15px;
   text-align: right;
 }
 .custom-settings-part {
@@ -700,6 +702,129 @@ nav a.is-active {
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   vertical-align: top;
+}
+.grid-3 li {
+  float: left;
+  position: relative;
+  width: 178px;
+  height: 494px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-top: 20px;
+  margin-right: 100px;
+  text-align: center;
+}
+.grid-3 .no-mg {
+  margin-right: 0;
+}
+.grid-3 .no-border {
+  border: none;
+}
+.list-products {
+  list-style-type: none;
+}
+.product-type {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  padding: 4px 10px;
+  margin: 15px 0;
+  background-color: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.materials {
+  position: relative;
+  display: inline-block;
+  max-width: 90px;
+  color: #161616;
+  font-size: 10px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.materials:before {
+  margin-right: 7px;
+  right: 100%;
+}
+.materials:before,
+.materials:after {
+  display: block;
+  background-color: #031022;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 15px;
+}
+.materials:after {
+  left: 100%;
+  margin-left: 7px;
+}
+.product-name {
+  margin: 13px 0;
+  color: #de6761;
+  font-size: 18px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.product-description {
+  color: #303030;
+  font-size: 16px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+}
+.collection-name {
+  position: relative;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  margin: 15px 0;
+  font-size: 10px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #161616;
+  vertical-align: middle;
+}
+.collection-name:before {
+  margin-right: 7px;
+  right: 100%;
+}
+.collection-name:before,
+.collection-name:after {
+  display: block;
+  width: 14px;
+  height: 13px;
+  background-image: url(../img/icon-star.png);
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: -10%;
+}
+.collection-name:after {
+  left: 100%;
+  margin-left: 7px;
+}
+.product-price {
+  display: block;
+  color: #161616;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.btn-buy {
+  position: absolute;
+  left: 22%;
+  bottom: 20px;
+  padding: 0 25px;
 }
 /* ==========================================================================
     FOOTER
@@ -799,6 +924,9 @@ nav a.is-active {
 }
 .select-pages-quantity .sl-placeholder {
   width: 16px !important;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.select-pages-quantity .sl-options {
   font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
 }
 .sl-container .sl-options {
