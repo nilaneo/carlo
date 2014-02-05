@@ -645,6 +645,11 @@ nav a.is-active {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   vertical-align: top;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 .list-checkboxes a:hover span {
   background-color: #de6761;
