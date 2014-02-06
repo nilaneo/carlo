@@ -702,6 +702,7 @@ nav a.is-active {
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   vertical-align: top;
+  -webkit-text-stroke: 0.35px;
 }
 .grid-3 li {
   float: left;
