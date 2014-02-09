@@ -53,6 +53,7 @@
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 /* ==========================================================================
     GENERAL STYLES
@@ -105,6 +106,7 @@ a:hover {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
+
 }
 .clearfix:after {
   clear: both;
@@ -114,6 +116,7 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .container {
   width: 1000px;
@@ -154,6 +157,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .nav-top li {
   margin-left: 40px;
@@ -172,6 +176,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 149px;
   height: 55px;
   margin-right: 50px;
@@ -182,6 +187,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
 }
 .nav-main ul {
@@ -192,6 +198,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .nav-main li {
   margin-left: 70px;
@@ -214,6 +221,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
 }
 .cart-block .cart-status {
@@ -228,6 +236,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 27px;
   height: 37px;
   padding-top: 11px;
@@ -252,6 +261,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 43px;
   height: 13px;
   margin-right: 5px;
@@ -286,6 +296,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 28px;
   line-height: 28px;
   padding: 0 20px;
@@ -323,6 +334,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 6px 8px;
   background-color: #f0f1f0;
   color: rgba(22, 22, 22, 0.63);
@@ -370,6 +382,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 178px;
   height: 178px;
   -webkit-border-radius: 50%;
@@ -428,6 +441,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 29px;
   height: 14px;
   background: url(../img/icon-arrow-right.png);
@@ -453,6 +467,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 3px 6px 3px 9px;
   background-color: rgba(94, 204, 183, 0.9);
 }
@@ -479,6 +494,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 5px 10px;
   background-color: #303030;
   background-color: rgba(48, 48, 48, 0.9);
@@ -561,6 +577,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 46px;
   height: 24px;
   text-align: center;
@@ -579,6 +596,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 18px;
   margin-left: 4px;
@@ -629,6 +647,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding-left: 27px;
   background-image: url(../img/checkbox-unchecked.jpg);
   background-repeat: no-repeat;
@@ -638,6 +657,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 1px 5px 1px 3px;
   background-color: transparent;
   color: #161616;
@@ -688,6 +708,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin-left: 30px;
 }
 .custom-settings-part span {
@@ -695,6 +716,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin-top: 3px;
   margin-right: 8px;
   color: #161616;
@@ -728,6 +750,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 4px 10px;
   margin: 15px 0;
   background-color: #f0f0f0;
@@ -786,6 +809,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin: 15px 0;
   font-size: 10px;
   font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
@@ -881,6 +905,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .pagination a {
   padding: 0 7px;
@@ -905,6 +930,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding-top: 2px;
 }
 .pagination .prev-page span,
@@ -913,6 +939,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 7px;
   height: 12px;
   background-image: url(../img/sprite-arrows-pagination.png);
@@ -941,6 +968,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .select-sort {
   width: 164px;
@@ -953,6 +981,7 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 10px;
   height: 5px !important;
   margin: 8px 5px 0 5px;
