@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var screenHeight = $(window).height() - 62;
-
-	$(".screen").height(screenHeight);
+	var screenHeight = $(window).height() - 162;
+	var productHeight = $('.container-product').height() + 100;
+	$(".screen").height(Math.max(screenHeight, productHeight));
 });

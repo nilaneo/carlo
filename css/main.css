@@ -610,6 +610,12 @@ nav a.is-active {
 .icon-grn-white {
   background: url(../img/icon-grn-white.png);
 }
+.icon-grn-black-small {
+  width: 9px;
+  height: 14px;
+  margin-left: 2px;
+  background: url(../img/icon-grn-black-small.png);
+}
 /* SIDEBAR
 ========================================================================== */
 .sidebar {
@@ -751,7 +757,7 @@ nav a.is-active {
   zoom: 1;
   /* IE < 8 */
 
-  padding: 4px 10px;
+  padding: 4px 10px 6px;
   margin: 15px 0;
   background-color: #f0f0f0;
   color: #7b7b7b;
@@ -852,6 +858,143 @@ nav a.is-active {
   padding: 0 25px;
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
+}
+/* ==========================================================================
+    ONE PRODUCT PAGE
+========================================================================== */
+.screen {
+  min-height: 400px;
+  background-image: url(../img/bg-one-product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container-product {
+  padding-top: 45px;
+}
+.block-prod {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+  padding: 15px 20px 10px;
+  margin-bottom: 15px;
+  background-color: #fdfdfe;
+}
+.prod-name-and-col .product-name {
+  margin: 0;
+  margin-bottom: 6px;
+}
+.prod-name-and-col .collection-name {
+  margin: 0;
+  margin-left: 22px;
+}
+.product-name-big {
+  font-size: 48px;
+  line-height: 38px;
+  font-family: "GillSansBold", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.block-prices {
+  margin-bottom: 15px;
+}
+.block-prices .product-price {
+  float: left;
+  width: 86px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.block-prices .product-price-old {
+  position: relative;
+  background-color: #fdfdfe;
+  font-size: 18px;
+}
+.block-prices .product-price-old:before {
+  position: absolute;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+  width: 60%;
+  height: 1px;
+  content: "";
+  background-color: #161616;
+  top: 50%;
+  left: 20%;
+}
+.block-prices .product-price-current {
+  background-color: #de6761;
+  color: #ffffff;
+  font-size: 24px;
+}
+.block-product-info {
+  position: relative;
+  width: 410px;
+  padding: 20px;
+}
+.block-product-info .btn-buy {
+  position: static;
+}
+.availability {
+  float: left;
+  color: #5eccb7;
+  font-size: 18px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.socials-likes {
+  float: right;
+  text-align: right;
+}
+.info-materials {
+  border-top: 1px solid #161616;
+  border-bottom: 1px solid #161616;
+  padding: 10px 0;
+  margin: 20px 0;
+  color: #161616;
+  font-size: 12px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.product-size {
+  color: #7b7b7b;
+  font-size: 12px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.info-prod-description {
+  margin: 20px 0;
+}
+.info-prod-description .product-description {
+  margin-bottom: 10px;
+}
+.product-gallery .list-pics {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+  padding: 15px;
+  background-color: #fdfdfe;
+  list-style-type: none;
+}
+.product-gallery .list-pics li {
+  float: left;
+  margin-left: 15px;
+}
+.product-gallery .list-pics li a {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.product-gallery .list-pics li a.is-active {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.product-gallery .list-pics li:first-child {
+  margin-left: 0;
 }
 /* ==========================================================================
     FOOTER
