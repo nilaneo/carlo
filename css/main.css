@@ -996,6 +996,24 @@ nav a.is-active {
 .product-gallery .list-pics li:first-child {
   margin-left: 0;
 }
+.list-recommendations {
+  list-style-type: none;
+}
+.list-recommendations li {
+  float: left;
+  width: 182px;
+  margin-left: 90px;
+  text-align: center;
+}
+.list-recommendations li:first-child {
+  margin-left: 0;
+}
+.list-recommendations .product-name {
+  margin: 10px 8px;
+}
+.list-recommendations .product-price {
+  margin-bottom: 30px;
+}
 /* ==========================================================================
     FOOTER
 ========================================================================== */
