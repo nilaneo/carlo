@@ -1244,6 +1244,7 @@ nav a.is-active {
 }
 .select-delivery .sl-placeholder {
   width: 194px !important;
+  line-height: 12px;
 }
 .select-pages-quantity .sl-placeholder {
   width: 16px !important;
@@ -1291,14 +1292,24 @@ nav a.is-active {
 /* ==========================================================================
     POPUPS
 ========================================================================== */
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .popup {
   position: fixed;
-  top: 30%;
+  top: 50%;
   left: 50%;
   width: 600px;
+  height: 534px;
   padding: 20px;
   padding-top: 15px;
   margin-left: -300px;
+  margin-top: -267px;
   background-color: rgba(255, 255, 255, 0.94);
 }
 .popup .block-form {
@@ -1343,6 +1354,113 @@ nav a.is-active {
   padding: 15px 0;
   border-top: 2px dotted #303030;
   border-bottom: 2px dotted #303030;
+}
+.block-order-info > div {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 124px;
+  vertical-align: top;
+}
+.order-img {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.order-type {
+  display: block;
+  margin: 0;
+  color: #525352;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.order-name,
+.order-quantity {
+  color: #303030;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.order-name {
+  margin: 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.minus,
+.plus {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 12px;
+  height: 12px;
+  border: none;
+  background-color: #303030;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.quantity-number {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  height: 20px;
+  border: 1px solid #cfcfcf;
+  vertical-align: middle;
+  padding: 0 5px;
+  color: #de6761;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.block-order-price {
+  width: 110px;
+  text-align: right;
+}
+.btn-del-order {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  background: url(../img/icon-delete.png) no-repeat;
+  color: #bebebe;
+  font-size: 12px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  vertical-align: top;
+}
+.price {
+  color: #5eccb7;
+  font-size: 12px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.order-price {
+  display: block;
+  font-size: 24px;
+}
+.delivery-info h5 {
+  font-size: 12px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 20px 0 10px;
+  color: #de6761;
+  text-transform: uppercase;
+}
+.delivery-info p {
+  margin-bottom: 20px;
+  color: #303030;
+  font-size: 12px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 /* ==========================================================================
     REUSABLE ELEMENTS
