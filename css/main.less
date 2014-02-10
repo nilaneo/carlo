@@ -1051,9 +1051,92 @@ nav {
     text-transform: uppercase;
 }
 
-.socials-likes {
+.socials-share {
     float: right;
     text-align: right;
+    margin-top: 5px;
+}
+
+.fb {
+    background-image: url("../img/share-fbz.png");
+}
+
+.btn-share {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+
+    a {
+
+        float: left;
+        height: 12px;
+        padding: 0 4px;
+        margin-right: 4px;
+        background-color: @green;
+        color: @white;
+        font-size: 9px;
+        font-family: Arial, sans-serif;
+    }
+
+    a:hover {
+        background-color: @orange;
+    }
+
+    .icon-share {
+        .inline-block;
+        height: 10px;
+        background-image: url(../img/sprite-share-icons.png);
+        background-repeat: no-repeat;
+    }
+
+    .i-fb {
+        width: 8px;
+        vertical-align: bottom;
+        background-position: -10px 0;
+    }
+
+    .i-tw {
+        width: 9px;
+        vertical-align: middle;
+        background-position: 0 0;
+    }
+
+    span {
+        float: left;
+        position: relative;
+        height: 12px;
+        padding: 0 3px;
+        border: 1px solid #cbcbcb;
+        background-color: @white;
+        color: #5d5956;
+        font-size: 8px;
+        line-height: 9px;
+        font-family: Arial, sans-serif;
+    }    
+
+    span:after, span:before {
+        border: medium solid rgba(0, 0, 0, 0);
+        content: " ";
+        height: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 100%;
+        width: 0;
+    }
+
+    span:before {
+        border-color: rgba(93, 93, 93, 0) #cbcbcb rgba(93, 93, 93, 0) rgba(93, 93, 93, 0);
+        border-width: 4px;
+        margin-top: -4px;
+        top: 50%;
+    }
+
+    span:after {
+        border-color: rgba(255, 255, 255, 0) #FFFFFF rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+        border-width: 2px;
+        margin-top: -2px;
+        top: 50%;
+    }    
 }
 
 .info-materials {
@@ -1093,6 +1176,10 @@ nav {
             margin-left: 15px;
 
             a {
+                display: inline-block;
+                width: 98px;
+                height: 97px;
+                vertical-align: top;
                 .opacity(.5);
             }
 
