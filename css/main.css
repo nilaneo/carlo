@@ -310,7 +310,7 @@ nav a.is-active {
   box-shadow: 3px 3px 0 #ffffff;
 }
 .title-block {
-  width: 1000px;
+  width: 100%;
   height: 0;
   border-bottom: 2px solid #f0f1f0;
   margin: 50px 0;
@@ -332,6 +332,14 @@ nav a.is-active {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
+}
+.title-block-small {
+  margin: 13px 0 21px;
+}
+.title-block-small span {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0;
 }
 .block-bestsellers {
   margin-bottom: 50px;
@@ -720,6 +728,11 @@ nav a.is-active {
   margin-right: 100px;
   text-align: center;
 }
+.grid-3 li .btn-buy {
+  position: absolute;
+  left: 22%;
+  bottom: 20px;
+}
 .grid-3 .no-mg {
   margin-right: 0;
 }
@@ -828,12 +841,14 @@ nav a.is-active {
   letter-spacing: 1px;
 }
 .btn-buy {
-  position: absolute;
-  left: 22%;
-  bottom: 20px;
   padding: 0 25px;
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
+}
+.btn-cancel {
+  margin-left: 6px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #9f9f9f;
 }
 /* ==========================================================================
     ONE PRODUCT PAGE
@@ -907,9 +922,6 @@ nav a.is-active {
   position: relative;
   width: 410px;
   padding: 20px;
-}
-.block-product-info .btn-buy {
-  position: static;
 }
 .availability {
   float: left;
@@ -1185,6 +1197,10 @@ nav a.is-active {
 .select-pages-quantity {
   width: 46px;
 }
+.select-delivery {
+  width: 220px;
+  margin-bottom: 10px;
+}
 .sl-button {
   display: inline-block;
   *display: block;
@@ -1225,6 +1241,9 @@ nav a.is-active {
 }
 .select-sort .sl-placeholder {
   width: 134px !important;
+}
+.select-delivery .sl-placeholder {
+  width: 194px !important;
 }
 .select-pages-quantity .sl-placeholder {
   width: 16px !important;
@@ -1268,4 +1287,96 @@ nav a.is-active {
 }
 .sl-container .sl-options li:hover a {
   color: #de6761;
+}
+/* ==========================================================================
+    POPUPS
+========================================================================== */
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 600px;
+  padding: 20px;
+  padding-top: 15px;
+  margin-left: -300px;
+  background-color: rgba(255, 255, 255, 0.94);
+}
+.popup .block-form {
+  float: left;
+}
+.btn-close-popup {
+  position: absolute;
+  top: -22px;
+  right: -22px;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #de6761;
+  background-image: url(../img/btn-close-popup.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.title-popup {
+  float: left;
+  color: #5eccb7;
+  font-size: 18px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  float: none;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.block-ordering-info {
+  padding-left: 235px;
+}
+.block-order-info {
+  padding: 15px 0;
+  border-top: 2px dotted #303030;
+  border-bottom: 2px dotted #303030;
+}
+/* ==========================================================================
+    REUSABLE ELEMENTS
+========================================================================== */
+.block-bordered {
+  border: 13px solid #303030;
+}
+.block-form {
+  width: 220px;
+}
+.input-primary {
+  width: 100%;
+  height: 22px;
+  padding: 3px 6px;
+  border: 1px solid #7e7e7e;
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.textarea-primary {
+  width: 100%;
+  height: 22px;
+  padding: 3px 6px;
+  border: 1px solid #7e7e7e;
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  height: 67px;
+  padding: 8px 6px;
+  resize: none;
 }
