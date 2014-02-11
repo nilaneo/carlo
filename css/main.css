@@ -300,6 +300,17 @@ nav a.is-active {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.btn:hover {
+  background-color: #329d88;
+}
+.btn-cancel:hover {
+  background-color: #717171;
 }
 .btn-italic {
   font-family: "GillSansSemiBoldItalic", "Open Sans", Helvetica, Arial, sans-serif;
@@ -312,7 +323,7 @@ nav a.is-active {
 .title-block {
   width: 100%;
   height: 0;
-  border-bottom: 2px solid #f0f1f0;
+  border-bottom: 2px solid #efefef;
   margin: 50px 0;
   text-align: center;
 }
@@ -324,7 +335,7 @@ nav a.is-active {
   zoom: 1;
   /* IE < 8 */
   padding: 6px 8px;
-  background-color: #f0f1f0;
+  background-color: #efefef;
   color: rgba(22, 22, 22, 0.63);
   font-size: 18px;
   line-height: 18px;
@@ -339,7 +350,7 @@ nav a.is-active {
 .title-block-small span {
   font-size: 12px;
   line-height: 12px;
-  letter-spacing: 0;
+  letter-spacing: .5px;
 }
 .block-bestsellers {
   margin-bottom: 50px;
@@ -1087,7 +1098,6 @@ nav a.is-active {
 }
 .block-cart {
   width: 670px;
-  margin-right: 30px;
 }
 .block-cart .delivery-info h5 {
   font-size: 18px;
@@ -1195,6 +1205,19 @@ nav a.is-active {
   /* IE < 8 */
   vertical-align: middle;
 }
+.block-ordering {
+  width: 294px;
+  padding: 25px;
+  text-align: center;
+}
+.block-ordering .title-order {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+.block-ordering .btn-buy {
+  margin-top: 10px;
+}
 /* ==========================================================================
     FOOTER
 ========================================================================== */
@@ -1228,11 +1251,20 @@ nav a.is-active {
 .footer .list-socials .icon-vkontakte {
   background-position: 0 0;
 }
+.footer .list-socials .icon-vkontakte:hover {
+  background-position: 0 -30px;
+}
 .footer .list-socials .icon-facebook {
   background-position: -30px 0;
 }
+.footer .list-socials .icon-facebook:hover {
+  background-position: -30px -30px;
+}
 .footer .list-socials .icon-instagram {
   background-position: -62px 0;
+}
+.footer .list-socials .icon-instagram:hover {
+  background-position: -62px -30px;
 }
 /* PAGINATION
 ========================================================================== */
@@ -1323,12 +1355,14 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-  width: 10px;
-  height: 5px !important;
+  width: 0px;
+  height: 0px;
   margin: 8px 5px 0 5px;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #ffffff transparent transparent;
   font-size: 0;
   line-height: 0;
-  background: url(../img/btn-arrow-down.png) no-repeat;
 }
 .sl-container {
   float: left;
@@ -1340,7 +1374,7 @@ nav a.is-active {
   position: relative;
   display: block;
   height: 100%;
-  padding: 4px 22px 4px 8px;
+  padding: 4px 22px 4px 14px;
   background: #161616;
 }
 .sl-placeholder {
@@ -1376,7 +1410,8 @@ nav a.is-active {
   padding: 0;
   max-height: 200px;
   margin: 0;
-  background-color: #161616;
+  border: 1px solid #161616;
+  background-color: #ffffff;
   list-style: none outside none;
   overflow: auto;
   z-index: 1;
@@ -1389,7 +1424,7 @@ nav a.is-active {
 }
 .sl-container .sl-options li a {
   display: block;
-  color: #ffffff;
+  color: #303030;
   font-size: 12px;
   font-weight: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1397,14 +1432,16 @@ nav a.is-active {
   line-height: 30px;
   text-decoration: none;
   text-align: left;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+}
+.sl-container .sl-options li:hover {
+  background-color: rgba(0, 0, 0, 0.01);
 }
 .sl-container .sl-options li:hover a {
-  color: #de6761;
+  color: #5eccb7;
+}
+.sl-container:hover .sl-button,
+.sl-open .sl-button {
+  border-color: #5eccb7 transparent transparent;
 }
 /* ==========================================================================
     POPUPS
@@ -1537,12 +1574,17 @@ nav a.is-active {
   text-align: center;
   vertical-align: middle;
 }
+.minus:hover,
+.plus:hover {
+  background-color: #5eccb7;
+}
 .quantity-number {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
   height: 20px;
+  width: 22px;
   padding: 0 5px;
   border: 1px solid #cfcfcf;
   margin: 0 5px;
@@ -1564,6 +1606,10 @@ nav a.is-active {
   font-size: 12px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   vertical-align: top;
+}
+.btn-del-order:hover {
+  background: url(../img/icon-delete-hover.png) no-repeat;
+  color: #727272;
 }
 .price {
   color: #5eccb7;
