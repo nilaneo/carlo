@@ -115,6 +115,15 @@ a:hover {
   zoom: 1;
   /* IE < 8 */
 }
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -75px;
+}
+.page-wrapper:after {
+  content: "";
+  display: block;
+  height: 75px;
+}
 .container {
   width: 1000px;
   margin: 0 auto;
