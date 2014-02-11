@@ -174,7 +174,7 @@ nav a.is-active {
   /* IE < 8 */
   width: 87px;
   height: 56px;
-  margin-right: 90px;
+  margin-right: 82px;
   background: url(../img/new-logo-main.png) no-repeat;
 }
 .nav-main {
@@ -233,9 +233,12 @@ nav a.is-active {
   padding-top: 11px;
   text-align: center;
   background: url(../img/cart.png) no-repeat;
-  color: #000000;
+  color: #5eccb7;
   font-size: 18px;
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.cart-block .cart-empty {
+  color: #000000;
 }
 .delivery {
   height: 60px;
@@ -336,6 +339,7 @@ nav a.is-active {
   /* IE < 8 */
   padding: 6px 8px;
   background-color: #efefef;
+  color: #161616;
   color: rgba(22, 22, 22, 0.63);
   font-size: 18px;
   line-height: 18px;
@@ -406,6 +410,7 @@ nav a.is-active {
   padding-top: 50px;
   background-color: #5eccb7;
   background-color: rgba(94, 204, 183, 0.8);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   text-align: center;
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -473,7 +478,9 @@ nav a.is-active {
   zoom: 1;
   /* IE < 8 */
   padding: 3px 6px 3px 9px;
+  background-color: #5eccb7;
   background-color: rgba(94, 204, 183, 0.9);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 .title-why .q-mark {
   margin-left: 15px;
@@ -857,7 +864,7 @@ nav a.is-active {
   letter-spacing: 1px;
 }
 .btn-cancel {
-  margin-left: 6px;
+  margin-left: 5px;
   font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
   background-color: #9f9f9f;
 }
@@ -991,12 +998,12 @@ nav a.is-active {
   float: left;
   position: relative;
   height: 12px;
-  padding: 0 3px;
+  padding: 2px 3px 0;
   border: 1px solid #cbcbcb;
   background-color: #ffffff;
   color: #5d5956;
   font-size: 8px;
-  line-height: 9px;
+  line-height: 6px;
   font-family: Arial, sans-serif;
 }
 .btn-share span:after,
@@ -1130,6 +1137,7 @@ nav a.is-active {
 }
 .table-orders {
   width: 100%;
+  border-collapse: collapse;
 }
 .table-orders thead {
   height: 40px;
@@ -1225,7 +1233,7 @@ nav a.is-active {
   margin-top: 10px;
 }
 /* ==========================================================================
-    CONGRATS
+    CONGRATULATIONS
 ========================================================================== */
 .block-congrats {
   width: 650px;
@@ -1241,6 +1249,12 @@ nav a.is-active {
 }
 .block-congrats .socials .icon-instagram {
   background-position: -62px -60px;
+}
+.block-congrats .socials .icon-vkontakte:hover {
+  background-position: 0 -90px;
+}
+.block-congrats .socials .icon-facebook:hover {
+  background-position: -30px -90px;
 }
 .title-congrats {
   float: left;
@@ -1258,11 +1272,140 @@ nav a.is-active {
   height: 40px;
   border-top: 1px solid #303030;
   border-bottom: 1px solid #303030;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #525352;
   font-size: 14px;
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 40px;
+}
+/* ==========================================================================
+    CONTACTS
+========================================================================== */
+.screen-2 {
+  position: relative;
+  width: 100%;
+  background-image: url(../img/bg-contacts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.block-contacts {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  left: 28%;
+  width: 390px;
+  height: 500px;
+  padding: 50px 20px 60px;
+  background-color: #ffffff;
+}
+.dl-horizontal dt {
+  clear: left;
+  float: left;
+  width: 85px;
+  color: #303030;
+  font-size: 14px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+}
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  content: " ";
+  display: table;
+}
+.dl-horizontal dd:after {
+  clear: both;
+}
+.dl-horizontal dd {
+  margin-left: 105px;
+  margin-bottom: 15px;
+  color: #303030;
+  font-size: 16px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.dl-horizontal dd a {
+  color: #5eccb7;
+  text-decoration: none;
+}
+.dl-horizontal dd a:hover {
+  text-decoration: underline;
+}
+.dl-horizontal dd p {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  vertical-align: middle;
+}
+.dl-horizontal dd > div {
+  margin-bottom: 8px;
+}
+.icon {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  margin-right: 10px;
+  vertical-align: middle;
+  background-image: url(../img/sprite-contacts.png);
+  background-repeat: no-repeat;
+}
+.icon-phone {
+  width: 20px;
+  height: 18px;
+  background-position: 0 0;
+}
+.icon-skype {
+  width: 20px;
+  height: 20px;
+  background-position: -19px 0;
+}
+.icon-email {
+  width: 20px;
+  height: 11px;
+  background-position: -38px 0;
+}
+.icon-icq {
+  width: 20px;
+  height: 18px;
+  background-position: -57px 0;
+}
+.icon-gmaps {
+  width: 16px;
+  height: 25px;
+  background-position: -77px 0;
+}
+.icon-vk {
+  width: 15px;
+  height: 17px;
+  background-position: -93px 0;
+}
+.icon-time {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background-position: -107px 0;
+  vertical-align: bottom;
+}
+.separator {
+  width: 158px;
+  height: 1px;
+  margin: 40px auto 38px;
+  background-color: #303030;
+}
+.working-time {
+  color: #303030;
+  font-size: 14px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.working-time span {
+  display: block;
+  margin-top: 6px;
+  color: #de6761;
+  font-size: 18px;
 }
 /* ==========================================================================
     FOOTER
@@ -1480,6 +1623,7 @@ nav a.is-active {
   text-align: left;
 }
 .sl-container .sl-options li:hover {
+  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.01);
 }
 .sl-container .sl-options li:hover a {
@@ -1498,7 +1642,9 @@ nav a.is-active {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.5);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 .popup {
   position: fixed;
@@ -1510,7 +1656,9 @@ nav a.is-active {
   padding-top: 15px;
   margin-left: -300px;
   margin-top: -267px;
+  background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.94);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=94)";
 }
 .popup .block-form {
   float: left;
@@ -1636,7 +1784,7 @@ nav a.is-active {
   width: 22px;
   padding: 2px 4px;
   border: 1px solid #cfcfcf;
-  margin: 0 5px;
+  margin: 0 3px;
   vertical-align: middle;
   background-color: transparent;
   color: #de6761;
