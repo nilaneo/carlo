@@ -1231,6 +1231,88 @@ nav {
 }
 
 /* ==========================================================================
+    CART
+========================================================================== */
+
+.container-cart {
+    padding-top: 42px;
+}
+
+.block-cart {
+    width: 670px;
+    margin-right: 30px;
+}
+
+.title-cart {
+    .availability;
+    display: block;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.table-orders {
+    width: 100%;
+
+    thead {
+        height: 40px;
+        vertical-align: middle;
+        border-top: 2px dotted @text;
+        border-bottom: 2px dotted @text;
+    }
+
+    th {
+        color: @text;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    th:first-child + th,
+    td:first-child + td {
+        text-align: left;
+    }
+
+    th:last-child,
+    td:last-child{
+        text-align: right;
+    }
+
+    tr {
+        border-bottom: 2px dotted @text;
+    }
+
+    td:first-child {
+        width: 100px;
+        height: 100px;
+        padding-top: 5px;
+        vertical-align: middle;
+        text-align: left;
+
+        img {
+            .border-radius(50%);
+        }
+    }
+
+    td {
+        text-align: center;
+        min-height: 100px;
+        vertical-align: middle;
+    }
+
+    .materials {
+        color: @text;
+        font-size: 12px;
+    }
+
+    .materials:before,
+    .materials:after {
+        height: 0;
+    }
+}
+
+/* ==========================================================================
     FOOTER
 ========================================================================== */
 
@@ -1522,7 +1604,7 @@ nav {
 }
 
 .block-order-info {
-    padding: 15px 0;
+    padding: 15px 0 10px;
     border-top: 2px dotted @text;
     border-bottom: 2px dotted @text;
 
@@ -1557,6 +1639,13 @@ nav {
     font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+.order-quantity {
+    margin-bottom: 5px;
+    span {
+        margin-right: 5px;
+    }
+}
+
 .order-name {
     margin: 8px 0;
     text-transform: uppercase;
@@ -1580,9 +1669,10 @@ nav {
 .quantity-number {
     .inline-block;
     height: 20px;
-    border: 1px solid #cfcfcf;
-    vertical-align: middle;
     padding: 0 5px;
+    border: 1px solid #cfcfcf;
+    margin: 0 5px;
+    vertical-align: middle;
     color: @orange;
     font-size: 16px;
     line-height: 17px;
