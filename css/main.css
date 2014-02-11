@@ -172,10 +172,10 @@ nav a.is-active {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-  width: 149px;
-  height: 55px;
-  margin-right: 50px;
-  background: url(../img/logo-main.png) no-repeat;
+  width: 87px;
+  height: 56px;
+  margin-right: 90px;
+  background: url(../img/new-logo-main.png) no-repeat;
 }
 .nav-main {
   display: inline-block;
@@ -1097,19 +1097,23 @@ nav a.is-active {
 .container-congrats {
   padding-top: 42px;
 }
-.block-cart {
+.block-cart,
+.block-congrats {
   width: 670px;
 }
-.block-cart .delivery-info h5 {
+.block-cart .delivery-info h5,
+.block-congrats .delivery-info h5 {
   font-size: 18px;
   margin: 15px 0;
   letter-spacing: 1px;
 }
-.block-cart .delivery-info p {
+.block-cart .delivery-info p,
+.block-congrats .delivery-info p {
   font-size: 16px;
   font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
 }
-.block-cart .delivery-info p span {
+.block-cart .delivery-info p span,
+.block-congrats .delivery-info p span {
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
 }
 .title-cart {
@@ -1119,6 +1123,7 @@ nav a.is-active {
   font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   display: block;
+  float: none;
   margin: 0;
   margin-bottom: 25px;
   font-weight: normal;
@@ -1224,6 +1229,40 @@ nav a.is-active {
 ========================================================================== */
 .block-congrats {
   width: 650px;
+}
+.block-congrats .socials li:first-child {
+  margin-left: 0;
+}
+.block-congrats .socials .icon-vkontakte {
+  background-position: 0 -60px;
+}
+.block-congrats .socials .icon-facebook {
+  background-position: -30px -60px;
+}
+.block-congrats .socials .icon-instagram {
+  background-position: -62px -60px;
+}
+.title-congrats {
+  float: left;
+  color: #5eccb7;
+  font-size: 18px;
+  font-family: "GillSans", "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  float: none;
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+.order-number {
+  height: 40px;
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;
+  margin-bottom: 20px;
+  color: #525352;
+  font-size: 14px;
+  font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 40px;
 }
 /* ==========================================================================
     FOOTER

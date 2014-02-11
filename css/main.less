@@ -267,10 +267,10 @@ nav {
 
 .logo-main {
     .inline-block;
-    width: 149px;
-    height: 55px;
-    margin-right: 50px;
-    background: url(../img/logo-main.png) no-repeat;
+    width: 87px;
+    height: 56px;
+    margin-right: 90px;
+    background: url(../img/new-logo-main.png) no-repeat;
 }
 
 .nav-main {
@@ -1249,7 +1249,8 @@ nav {
     padding-top: 42px;
 }
 
-.block-cart {
+.block-cart,
+.block-congrats {
     width: 670px;
 
     .delivery-info {
@@ -1273,6 +1274,7 @@ nav {
 .title-cart {
     .availability;
     display: block;
+    float: none;
     margin: 0;
     margin-bottom: 25px;
     font-weight: normal;
@@ -1390,9 +1392,41 @@ nav {
 
 .block-congrats {
     width: 650px;
+
+    .socials {
+
+        li:first-child {
+            margin-left: 0;
+        }
+
+        .icon-vkontakte {
+            background-position: 0 -60px;
+        }
+
+        .icon-facebook {
+            background-position: -30px -60px;
+        }
+
+        .icon-instagram {
+            background-position: -62px -60px;
+        }
+    }
 }
 
+.title-congrats {
+    .title-cart;
+}
 
+.order-number {
+    height: 40px;
+    border-top: 1px solid @text;
+    border-bottom: 1px solid @text;
+    margin-bottom: 20px;
+    color: #525352;
+    font-size: 14px;
+    font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 40px;
+}
 
 /* ==========================================================================
     FOOTER
