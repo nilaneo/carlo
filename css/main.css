@@ -1490,6 +1490,9 @@ nav a.is-active {
   background-position: center;
   background-repeat: no-repeat;
 }
+.btn-close-popup:hover {
+  background-color: #da534c;
+}
 .title-order {
   float: left;
   color: #5eccb7;
