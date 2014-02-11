@@ -1093,7 +1093,8 @@ nav a.is-active {
 /* ==========================================================================
     CART
 ========================================================================== */
-.container-cart {
+.container-cart,
+.container-congrats {
   padding-top: 42px;
 }
 .block-cart {
@@ -1219,6 +1220,12 @@ nav a.is-active {
   margin-top: 10px;
 }
 /* ==========================================================================
+    CONGRATS
+========================================================================== */
+.block-congrats {
+  width: 650px;
+}
+/* ==========================================================================
     FOOTER
 ========================================================================== */
 .footer {
@@ -1232,38 +1239,38 @@ nav a.is-active {
   font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-.footer .list-socials {
+.list-socials {
   padding-left: 0;
   margin-top: 24px;
 }
-.footer .list-socials li {
+.list-socials li {
   float: left;
   list-style-type: none;
   margin-left: 15px;
 }
-.footer .list-socials .icon-social {
+.list-socials .icon-social {
   display: block;
   width: 32px;
   height: 30px;
   background-image: url(../img/socials-sprite.png);
   background-repeat: no-repeat;
 }
-.footer .list-socials .icon-vkontakte {
+.list-socials .icon-vkontakte {
   background-position: 0 0;
 }
-.footer .list-socials .icon-vkontakte:hover {
+.list-socials .icon-vkontakte:hover {
   background-position: 0 -30px;
 }
-.footer .list-socials .icon-facebook {
+.list-socials .icon-facebook {
   background-position: -30px 0;
 }
-.footer .list-socials .icon-facebook:hover {
+.list-socials .icon-facebook:hover {
   background-position: -30px -30px;
 }
-.footer .list-socials .icon-instagram {
+.list-socials .icon-instagram {
   background-position: -62px 0;
 }
-.footer .list-socials .icon-instagram:hover {
+.list-socials .icon-instagram:hover {
   background-position: -62px -30px;
 }
 /* PAGINATION
@@ -1588,10 +1595,11 @@ nav a.is-active {
   /* IE < 8 */
   height: 20px;
   width: 22px;
-  padding: 0 5px;
+  padding: 2px 4px;
   border: 1px solid #cfcfcf;
   margin: 0 5px;
   vertical-align: middle;
+  background-color: transparent;
   color: #de6761;
   font-size: 16px;
   line-height: 17px;

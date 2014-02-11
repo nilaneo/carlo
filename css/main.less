@@ -1244,7 +1244,8 @@ nav {
     CART
 ========================================================================== */
 
-.container-cart {
+.container-cart,
+.container-congrats {
     padding-top: 42px;
 }
 
@@ -1384,6 +1385,16 @@ nav {
 }
 
 /* ==========================================================================
+    CONGRATS
+========================================================================== */
+
+.block-congrats {
+    width: 650px;
+}
+
+
+
+/* ==========================================================================
     FOOTER
 ========================================================================== */
 
@@ -1397,9 +1408,10 @@ nav {
         font-size: 12px;
         font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
-    }
+    }    
+}
 
-    .list-socials {
+.list-socials {
         padding-left: 0;
         margin-top: 24px;
         li {
@@ -1441,7 +1453,6 @@ nav {
             background-position: -62px -30px;
         }
     }
-}
 
 /* PAGINATION
 ========================================================================== */
@@ -1773,10 +1784,11 @@ nav {
     .inline-block;
     height: 20px;
     width: 22px;
-    padding: 0 5px;
+    padding: 2px 4px;
     border: 1px solid #cfcfcf;
     margin: 0 5px;
     vertical-align: middle;
+    background-color: transparent;
     color: @orange;
     font-size: 16px;
     line-height: 17px;
