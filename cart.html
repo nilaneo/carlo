@@ -9,6 +9,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+rel="stylesheet" type="text/css" />
 
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,13 +59,21 @@
                         <h4 class="title-cart">У вас (<span class="cart-quantity">3</span>) товара в корзине</h4>
                         <table class="table-orders">
                             <thead>
-                                <th></th>
-                                <th>Наименование</th>
-                                <th>Материал</th>
-                                <th>Количество</th>
-                                <th>Цена</th>
+                                <tr class="table-border">
+                                    <td colspan="5"><hr></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Наименование</th>
+                                    <th>Материал</th>
+                                    <th>Количество</th>
+                                    <th>Цена</th>
+                                </tr>
                             </thead>
                             <tbody>
+                                <tr class="table-border">
+                                    <td colspan="5"><hr></td>
+                                </tr>
                                 <tr>
                                     <td>
                                         <img src="img/order-1.jpg" alt="">
@@ -85,9 +95,12 @@
                                     </td>
                                     <td>
                                         <span class="product-price">
-                                            80<span class="icon-currency icon-grn-black"></span>
+                                            80 <span class="currency">&#8372;</span>
                                         </span>
                                     </td>
+                                </tr>
+                                <tr class="table-border">
+                                    <td colspan="5"><hr></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -110,18 +123,21 @@
                                     </td>
                                     <td>
                                         <span class="product-price">
-                                            80<span class="icon-currency icon-grn-black"></span>
+                                            80 <span class="currency">&#8372;</span>
                                         </span>
                                     </td>
+                                </tr>
+                                <tr class="table-border">
+                                    <td colspan="5"><hr></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="block-general-price">
                             <span class="price-title">Общая сумма</span>
                             <div class="price">
-                                <span class="order-price j-general-price">1289<span> ₴</span></span>
+                                <span class="order-price j-general-price">1289 <span class="currency">&#8399;</span></span>
                                 <span class="price-delivery">
-                                    +  ≈ 20 ₴ доставка
+                                    +  ≈ 20 <span class="currency">&#8372;</span> доставка
                                 </span>
                             </div>
                         </div>

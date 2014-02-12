@@ -57,6 +57,19 @@
     src: url(../fonts/GILSANUB.ttf);
 }
 
+@font-face {
+    font-family: Rouble;
+    src: url('https://dl.dropboxusercontent.com/s/qv78mhbjqo26n5l/rouble.eot?') format('eot'), 
+    url('http://www.artlebedev.ru/kovodstvo/sections/159/rouble.otf') format('opentype'),
+    url('https://dl.dropboxusercontent.com/s/co69wedsqczon22/rouble.woff') format('woff'), 
+    url('https://dl.dropboxusercontent.com/s/rp3me8dv6dyqty2/rouble.ttf')  format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/l28sv4fwyzfmflv/rouble.svg#ALSRubl') format('svg');
+}
+
+.currency {
+    font-family: 'PT Sans', serif;
+}
+
 /* ==========================================================================
     LESS
 ========================================================================== */
@@ -451,7 +464,7 @@ nav {
     span {
         font-size: 12px;
         line-height: 12px;
-        letter-spacing: .5px;
+        letter-spacing: 0;
     }
 }
 
@@ -698,51 +711,51 @@ nav {
     padding-left: 72px;
 }
 
-.currency {
-    a {
-        .inline-block;
-        width: 46px;
-        height: 24px;
-        text-align: center;
-        line-height: 20px;
-        background-color: transparent;
-    }
+// .currency {
+//     a {
+//         .inline-block;
+//         width: 46px;
+//         height: 24px;
+//         text-align: center;
+//         line-height: 20px;
+//         background-color: transparent;
+//     }
 
-    a:hover,
-    a.is-active {
-        background-color: @orange;
-    }
+//     a:hover,
+//     a.is-active {
+//         background-color: @orange;
+//     }
 
-    span {
-        vertical-align: middle;
-    }
-}
+//     span {
+//         vertical-align: middle;
+//     }
+// }
 
-.icon-currency {
-    .inline-block;
-    width: 13px;
-    height: 18px;
-    margin-left: 4px;
-}
+// .icon-currency {
+//     .inline-block;
+//     width: 13px;
+//     height: 18px;
+//     margin-left: 4px;
+// }
 
-.icon-grn-black {
-    background: url(../img/icon-grn-black.png);
-}
+// .icon-grn-black {
+//     background: url(../img/icon-grn-black.png);
+// }
 
-.icon-rub-black {
-    background: url(../img/icon-rub-black.png);
-}
+// .icon-rub-black {
+//     background: url(../img/icon-rub-black.png);
+// }
 
-.icon-grn-white {
-    background: url(../img/icon-grn-white.png);
-}
+// .icon-grn-white {
+//     background: url(../img/icon-grn-white.png);
+// }
 
-.icon-grn-black-small {
-    width: 9px;
-    height: 14px;
-    margin-left: 2px;
-    background: url(../img/icon-grn-black-small.png);
-}
+// .icon-grn-black-small {
+//     width: 9px;
+//     height: 14px;
+//     margin-left: 2px;
+//     background: url(../img/icon-grn-black-small.png);
+// }
 
 /* SIDEBAR
 ========================================================================== */
@@ -1302,15 +1315,13 @@ nav {
 .table-orders {
     width: 100%;
     border-collapse: collapse;
-
+    border-spacing: 1em;    
     thead {
-        height: 40px;
         vertical-align: middle;
-        border-top: 2px dotted @text;
-        border-bottom: 2px dotted @text;
     }
 
     th {
+        height: 40px;
         color: @text;
         font-size: 14px;
         line-height: 14px;
@@ -1328,10 +1339,6 @@ nav {
     td:last-child{
         text-align: right;
         width: 120px;
-    }
-
-    tr {
-        border-bottom: 2px dotted @text;
     }
 
     td:first-child {
@@ -1361,6 +1368,24 @@ nav {
     .materials:before,
     .materials:after {
         height: 0;
+    }
+
+    .table-border {
+        height: 0px;
+
+        td {
+            height: 0px;
+            min-height: 0px;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        hr {
+            display: block;
+            height: 0;
+            border: none;
+            border-bottom: 2px dotted @text;
+        }
     }
 }
 
@@ -1981,11 +2006,12 @@ nav {
     .inline-block;
     width: 12px;
     height: 12px;
+    padding: 2px;
     border: none;
     background-color: @text;
     color: @white;
     font-size: 12px;
-    line-height: 10px;
+    line-height: 7px;
     text-align: center;
     vertical-align: middle;
 }
@@ -1999,13 +2025,13 @@ nav {
     .inline-block;
     height: 20px;
     width: 22px;
-    padding: 2px 4px;
+    padding: 2px 6px;
     border: 1px solid #cfcfcf;
     margin: 0 3px;
     vertical-align: middle;
     background-color: transparent;
     color: @orange;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 17px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
