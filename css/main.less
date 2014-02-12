@@ -711,51 +711,28 @@ nav {
     padding-left: 72px;
 }
 
-// .currency {
-//     a {
-//         .inline-block;
-//         width: 46px;
-//         height: 24px;
-//         text-align: center;
-//         line-height: 20px;
-//         background-color: transparent;
-//     }
+.block-currency {
+    a {
+        .inline-block;
+        width: 46px;
+        height: 24px;
+        text-align: center;
+        line-height: 20px;
+        background-color: transparent;
+        color: @text;
+        font-size: 20px;
+        font-weight: bold;
+    }
 
-//     a:hover,
-//     a.is-active {
-//         background-color: @orange;
-//     }
+    a:hover,
+    a.is-active {
+        background-color: @orange;
+    }
 
-//     span {
-//         vertical-align: middle;
-//     }
-// }
-
-// .icon-currency {
-//     .inline-block;
-//     width: 13px;
-//     height: 18px;
-//     margin-left: 4px;
-// }
-
-// .icon-grn-black {
-//     background: url(../img/icon-grn-black.png);
-// }
-
-// .icon-rub-black {
-//     background: url(../img/icon-rub-black.png);
-// }
-
-// .icon-grn-white {
-//     background: url(../img/icon-grn-white.png);
-// }
-
-// .icon-grn-black-small {
-//     width: 9px;
-//     height: 14px;
-//     margin-left: 2px;
-//     background: url(../img/icon-grn-black-small.png);
-// }
+    span {
+        vertical-align: middle;
+    }
+}
 
 /* SIDEBAR
 ========================================================================== */
@@ -884,6 +861,10 @@ nav {
             left: 22%;
             bottom: 20px;
         }
+    }
+
+    li:nth-child(3n+3) {
+        margin-right: 0;
     }
 
     .no-mg {
