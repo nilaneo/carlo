@@ -59,9 +59,9 @@
 
 @font-face {
     font-family: Rouble;
-    src: url('https://dl.dropboxusercontent.com/s/qv78mhbjqo26n5l/rouble.eot?') format('eot'), 
+    src: url('https://dl.dropboxusercontent.com/s/qv78mhbjqo26n5l/rouble.eot?') format('eot'),
     url('http://www.artlebedev.ru/kovodstvo/sections/159/rouble.otf') format('opentype'),
-    url('https://dl.dropboxusercontent.com/s/co69wedsqczon22/rouble.woff') format('woff'), 
+    url('https://dl.dropboxusercontent.com/s/co69wedsqczon22/rouble.woff') format('woff'),
     url('https://dl.dropboxusercontent.com/s/rp3me8dv6dyqty2/rouble.ttf')  format('truetype'),
     url('https://dl.dropboxusercontent.com/s/l28sv4fwyzfmflv/rouble.svg#ALSRubl') format('svg');
 }
@@ -222,7 +222,7 @@ a:hover {
 
 .page-wrapper {
     min-height: 100%;
-    margin-bottom: -75px; 
+    margin-bottom: -75px;
 }
 
 .page-wrapper:after {
@@ -1076,7 +1076,7 @@ nav {
 .block-product-info {
     position: relative;
     width: 410px;
-    padding: 20px;    
+    padding: 20px;
 }
 
 .availability {
@@ -1149,7 +1149,7 @@ nav {
         font-size: 8px;
         line-height: 6px;
         font-family: Arial, sans-serif;
-    }    
+    }
 
     span:after, span:before {
         border: medium solid rgba(0, 0, 0, 0);
@@ -1173,7 +1173,7 @@ nav {
         border-width: 2px;
         margin-top: -2px;
         top: 50%;
-    }    
+    }
 }
 
 .info-materials {
@@ -1296,7 +1296,7 @@ nav {
 .table-orders {
     width: 100%;
     border-collapse: collapse;
-    border-spacing: 1em;    
+    border-spacing: 1em;
     thead {
         vertical-align: middle;
     }
@@ -1463,6 +1463,88 @@ nav {
 }
 
 /* ==========================================================================
+    DELIVEY AND PAYMENT
+========================================================================== */
+
+.container-delivery {
+    .container-catalogue;
+
+    h2 {
+       .availability;
+       float: none;
+       display: block;
+       margin: 0;
+       font-size: 16px;
+    }
+
+    h3 {
+        height: 38px;
+        border-top: 1px solid @text;
+        border-bottom: 1px solid @text;
+        margin: 20px 0;
+        color: @text;
+        font-size: 14px;
+        line-height: 38px;
+        font-weight: normal;
+        font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.payment-and-delivery {
+    padding-left: 345px;
+    background-image: url(../img/bg-delivery.png);
+    background-repeat: no-repeat;
+
+    p {
+        margin-bottom: 20px;
+        color: @text;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+        span {
+            color: @green;
+        }
+
+        a {
+            color: @black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.block-payment {
+    margin-bottom: 50px;
+}
+
+.icon-round {
+    .inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-image: url(../img/sprite-icons-round.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.icon-cash {
+    background-position: 0 0;
+}
+
+.icon-no-cash {
+    background-position: -35px 0;
+}
+
+.icon-ua {
+   background-position: -70px 0;
+}
+
+.icon-ru {
+   background-position: -105px 0;
+}
+
+/* ==========================================================================
     CONTACTS
 ========================================================================== */
 
@@ -1533,7 +1615,7 @@ nav {
         >div {
             margin-bottom: 8px;
         }
-    }    
+    }
 }
 
 .icon {
@@ -1624,7 +1706,7 @@ nav {
         font-size: 12px;
         font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
-    }    
+    }
 }
 
 .list-socials {
@@ -1669,6 +1751,59 @@ nav {
             background-position: -62px -30px;
         }
     }
+
+
+/* ==========================================================================
+    PAGE 404
+========================================================================== */
+
+.page-404 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/404-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -177px 0 0 -185px;
+    width: 354px;
+    height: 370px;
+    background: url(../img/triangle-404.png) no-repeat;
+    text-align: center;
+    font-family: "GillSansSemiBold", "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+
+    p {
+        margin-top: 112px;
+        color: @white;
+        font-size: 16px;
+    }
+}
+
+.logo-white {
+    display: block;
+    width: 83px;
+    height: 52px;
+    margin: 100px auto 0;
+    background: url(../img/logo-white.png) no-repeat;
+}
+
+.lnk-back-home {
+    .inline-block;
+    border-bottom: 1px solid @green;
+    margin-top: 70px;
+    color: @green;
+    font-size: 12px;
+}
+
+.lnk-back-home:hover {
+    border-bottom: none;
+}
 
 /* PAGINATION
 ========================================================================== */
